@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff7613;
+  --text-color: #727171;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* common styles */
+img {
+  width: 100%;
+  border-radius: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.title {
+  color: #ff7613;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.item_preTitle {
+  font-size: 1.4rem;
+  color: #727171;
+  font-weight: 300;
+}
+
+.item_title {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  margin: 0.8rem;
+}
+
+.item_subtitle {
+  font-size: 1.4rem;
+  color: #727171;
+  font-weight: 400;
+}
+/* layouts */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  background: #070707;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 5rem;
+    gap: 7rem;
+  }
+}
+
+.profile {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+
+.group-1,
+.group-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+/* profile */
+.profile_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.profile_profileIMG {
+  max-width: 250px;
+}
+
+.profile_name {
+  color: white;
+  font-weight: 450;
+  font-size: clamp(2rem, 8vw, 4rem);
+  text-transform: uppercase;
+}
+
+.profile_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* back to top */
+#back-to-top > button {
+  background-color: #727171;
+  border-radius: 50%;
+  border: solid 1px var(--primary-color);
+  width: 50px;
+  height: 50px;
+}
+
+#back-to-top:hover > button {
+  border: solid 1px #727171;
+  background-color: var(--primary-color);
+}
+#back-to-top > button {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#back-to-top:hover > button {
+  text-decoration: none;
+  color: white;
+}
+
+#back-to-top > button {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+/*nav bar*/
+#navbar {
+  background-color: #727171;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 4vw;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#navbar {
+  position: sticky;
+  top: 0px;
+}
+
+/* programming languages */
+.skill_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+/* education */
+.edu_item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* xp */
+.xp {
+  margin-top: 5rem;
+}
+
+.xp_item {
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #727171;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.contact .socials h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.details {
+  padding: 2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+h4 {
+  padding: 2rem;
+  text-transform: uppercase;
+}
